@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Membership InterBase</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="header1">
+        <div class="logo">
+        <img src="photo/logo.png">
+      </div>
+      <h1>I N T E R B A S E | Y G E</h1>
+    </div>
+    <header>
+      <div>
+        <h3>JOIN MEMBERSHIP | YG ENTERTAIMENT</h3>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="artist.html">Artist</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="daftar_member.html">Membership</a></li>
+            <li><a href="index.html">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <style>
+      body {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;}
+    </style>
+    
+    <form id="myForm" class="daftar">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="member">Membership:</label>
+      <select id="member" name="member" required>
+        <option value="">-- Choiche Membership --</option>
+        <option value="VIP">VIP</option>
+        <option value="Reguler">Reguler</option>
+      </select>
+      
+      <label for="payment">Payment:</label>
+      <input type="radio" id="credit" name="payment" value="transfer" required>
+      <label for="credit">Credit</label>
+      <input type="radio" id="credit" name="payment" value="transfer" required>
+      <label for="transfer">Transfer</label>
+      
+      <label for="hobbies">Hobbies:</label>
+      <input type="checkbox" id="reading" name="hobbies" value="reading">
+      <label for="reading">Reading</label>
+      <input type="checkbox" id="music" name="hobbies" value="music">
+      <label for="music">Music</label>
+      
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="5" cols="30"></textarea>
+      
+      <label for="IDCard">ID Card:</label>
+      <input type="file" id="IDCard" name="IDCard" accept="image/*">
+      
+      <input type="submit" value="Submit">
+  </form>
+
+  <style>
+    /* CSS untuk tampilan form output */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    .container-tbl {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .daftar img {
+      max-width: 100px;
+    }
+  </style>
+
+  <div id="output" class="container-tbl">
+    <h1>Formulir Membership Interbase</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Membership</th>
+          <th>Payment</th>
+          <th>Hobbies</th>
+          <th>Comment</th>
+          <th>ID Card</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+    <p style="text-align: center; color: red">Subsequent payments will be sent via email</p>
+  </div>
+  <script src="js/form.js"></script>
+
+  <section class="artis">
+    <div class="container">
+      <div class="card">
+        <img src="photo/blackpink2.jpg">
+        <h4>BLACK PINK</h4>
+        <p>8 August 2016</p>
+      </div>
+      <div class="card">
+        <img src="photo/treasure.jpg">
+        <h4>TREASURE</h4>
+        <p>7 August 2020</p>
+      </div>
+      <div class="card">
+        <img src="photo/bigbang.jpg">
+        <h4>BIGBANG</h4>
+        <p>19 August 2006</p>
+      </div>
+    </div>
+  </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 INTERBASE</p>
+      </div>
+    </footer>
+  </body>
+</html>

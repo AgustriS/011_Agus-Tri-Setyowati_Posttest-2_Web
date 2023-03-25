@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>InterBase</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="header1">
+        <div class="logo">
+        <img src="photo/logo.png">
+      </div>
+      <h1>I N T E R B A S E | Y G E</h1>
+    </div>
+    <header>
+      <div>
+        <h3>INTERBASE | YG ENTERTAIMENT</h3>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="artist.html">Artist</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="daftar_member.html">Membership</a></li>
+            <li><a href="index.html">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="slider">
+        <div class="slider-container">
+          <img src="photo/blackpink.jpg" class="slide">
+          <img src="photo/baemon.jpg" class="slide">
+          <img src="photo/treasurekonser.jpg" class="slide">
+        </div>
+      </div>
+      <div class="container">
+        <h2>Welcome to INTERBASE YG Entertainment's <h2 id="greeting"></h2></h2>
+        <p>We are ready to warmly welcome you and provide various interesting information about your favorite artists. Be a part of our community and join other fans to support and appreciate their works. Joining us!</p>
+        <a href="daftar_member.html" class="btn">Membership</a>
+      </div>
+    </section>    
+    
+    <script>
+      let loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        document.getElementById("greeting").textContent = loggedInUser + "!";
+      }
+    </script>
+
+    <section class="artis">
+      <div class="container">
+        <h3>YG ARTIST INTRODUCING</h3>
+        <div class="card">
+          <img src="photo/blackpink2.jpg">
+          <h4>BLACK PINK</h4>
+          <p>8 August 2016</p>
+        </div>
+        <div class="card">
+          <img src="photo/treasure.jpg">
+          <h4>TREASURE</h4>
+          <p>7 August 2020</p>
+        </div>
+        <div class="card">
+          <img src="photo/bigbang.jpg">
+          <h4>BIGBANG</h4>
+          <p>19 August 2006</p>
+        </div><br>
+        <a href="artist.html" class="btn">More</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 INTERBASE</p>
+      </div>
+    </footer>
+  </body>
+</html>
